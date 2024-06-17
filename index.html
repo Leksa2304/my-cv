@@ -233,20 +233,24 @@
             <div class="wrapper">
                 <h3 class="title">Свяжитесь со мной</h3>
 
-                <form id="form" class="form" autocomplete="off">
-                    <div class="left-column">
-
-                        <input type="text" class="form__field" name="name" placeholder="Ваше имя" autocomplete="off" required>
-                        <input type="email" class="form__field" name="email" placeholder="Ваш email" required>
+                <form id="form" class="form">
+                    <div class="form__input-box">
+                        <input type="text" id="name" class="form__input-field" name="name" placeholder="Ваше имя" autocomplete="off">
                     </div>
-                    <div class="left-column">
-                        <textarea name="message" class="form__field" placeholder="Ваше сообщение" rows="6" cols="50" required></textarea>
+                    <div class="form__input-box">
+                        <input type="email" id="email" class="form__input-field" name="email" placeholder="Ваш email" autocomplete="off">
                     </div>
 
+                    <div class="form__input-box">
+                        <textarea id="message" class="form__input-field" name="message" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <button type="submit" class="form__button" id="sendButton">Отправить сообщение</button>
                 </form>
-                <button type="submit" class="form__button" id="sendButton">Отправить сообщение</button>
+
             </div>
         </section>
+
     </main>
     <footer class="footer">
         <img class="logo" src="./img/logo.svg" alt="Логотип">
@@ -255,7 +259,9 @@
         <i class="fa-solid fa-chevron-up btn-up__item"></i>
     </a>
 
+    <!-- <script type="module" src="script.js"></script> -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
