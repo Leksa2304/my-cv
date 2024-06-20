@@ -33,3 +33,32 @@ certificates.forEach(function(certificate) {
         }
     });
 });
+
+const leftBtns = document.querySelector("#left-btns");
+const rightBtns = document.querySelector("#right-btns");
+
+window.addEventListener("resize", function() {
+
+    if (window.innerWidth <= 982) {
+        rightBtns.classList.add("hidden");
+        leftBtns.classList.remove("hidden");
+
+    }
+});
+
+const headerBurger = document.querySelector(".header__burger");
+const menu = document.querySelector(".menu");
+
+headerBurger.addEventListener("click", () => {
+    headerBurger.classList.toggle("active");
+    menu.classList.toggle("active");
+})
+
+const menuItems = document.querySelectorAll(".menu__item");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        headerBurger.classList.remove("active");
+        menu.classList.remove("active");
+    })
+})

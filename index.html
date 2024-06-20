@@ -36,6 +36,13 @@
                     <a class="menu__item" href="#contacts">Свяжитесь со мной</a>
                 </nav>
 
+                <div class="header__burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+
+                </div>
+
             </header>
         </div>
     </div>
@@ -43,9 +50,13 @@
         <section class="about-me" id="about-me">
             <div class="wrapper">
                 <div class="row">
-                    <div class="about-me__img">
-                        <img src="./img/photo.jpg" alt="Фотография">
+                    <div class="row__left-side">
+                        <div class="about-me__img">
+                            <img src="./img/photo.jpg" alt="Фотография">
+
+                        </div>
                     </div>
+
                     <div class="about-me__info">
                         <h1 class="about-me__title">Елена Лемзикова</h1>
                         <div class="about-me__body">
@@ -75,13 +86,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="about-me__btns">
+                        <div class="about-me__btns" id="right-btns">
                             <a href="#contacts">Связаться со мной</a>
                             <!-- <a href="./img/Elena Lem.pdf">Download CV</a> -->
                             <a onclick="openFileWindow()">Download CV</a>
                         </div>
                     </div>
 
+                </div>
+                <div class="about-me__btns hidden" id="left-btns">
+                    <a href="#contacts">Связаться со мной</a>
+                    <!-- <a href="./img/Elena Lem.pdf">Download CV</a> -->
+                    <a onclick="openFileWindow()">Download CV</a>
                 </div>
             </div>
         </section>
@@ -139,23 +155,24 @@
 
         <section class="certificates" id="certificates">
             <div class="wrapper">
-                <div class="certificates__container">
-                    <h3 class="title">Сертификаты</h3>
-                    <div class="certificates__items">
-                        <div class="certificates__item">
-                            <img src="./img/certificate_Tilda.jpg" alt="Сертификат">
 
-                        </div>
-                        <div class="certificates__item">
-                            <img src="./img/certificate_HTML.jpg" alt="Сертификат">
+                <h3 class="title">Сертификаты</h3>
+                <!-- <div class="certificates__container"> -->
+                <div class="certificates__items">
+                    <div class="certificates__item">
+                        <img src="./img/certificate_Tilda.jpg" alt="Сертификат">
 
-                        </div>
-                        <div class="certificates__item">
-                            <img src="./img/certificate_JS.jpg" alt="Сертификат">
+                    </div>
+                    <div class="certificates__item">
+                        <img src="./img/certificate_HTML.jpg" alt="Сертификат">
 
-                        </div>
+                    </div>
+                    <div class="certificates__item">
+                        <img src="./img/certificate_JS.jpg" alt="Сертификат">
+
                     </div>
                 </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -255,11 +272,11 @@
     <footer class="footer">
         <img class="logo" src="./img/logo.svg" alt="Логотип">
     </footer>
+
     <a class="btn-up" href="#menu">
         <i class="fa-solid fa-chevron-up btn-up__item"></i>
     </a>
 
-    <!-- <script type="module" src="script.js"></script> -->
     <script src="script.js"></script>
 
 </body>
