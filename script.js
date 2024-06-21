@@ -18,23 +18,6 @@ function openFileWindow() {
 }
 
 
-
-// const certificates = document.querySelectorAll(".certificates__item");
-
-// certificates.forEach(function(certificate) {
-//     certificate.addEventListener("click", function(event) {
-//         if (event.target.classList.contains("enlarged")) {
-
-//             event.target.classList.remove("enlarged");
-
-//         } else {
-
-//             event.target.classList.add("enlarged");
-//         }
-//     });
-// });
-
-
 const modal = document.getElementById('myModal');
 const modalImage = document.getElementById('modalImage');
 const myCert = document.querySelectorAll('.myCert');
