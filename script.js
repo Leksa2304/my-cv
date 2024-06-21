@@ -19,20 +19,39 @@ function openFileWindow() {
 
 
 
-const certificates = document.querySelectorAll(".certificates__item");
+// const certificates = document.querySelectorAll(".certificates__item");
 
-certificates.forEach(function(certificate) {
-    certificate.addEventListener("click", function(event) {
-        if (event.target.classList.contains("enlarged")) {
+// certificates.forEach(function(certificate) {
+//     certificate.addEventListener("click", function(event) {
+//         if (event.target.classList.contains("enlarged")) {
 
-            event.target.classList.remove("enlarged");
+//             event.target.classList.remove("enlarged");
 
-        } else {
+//         } else {
 
-            event.target.classList.add("enlarged");
-        }
+//             event.target.classList.add("enlarged");
+//         }
+//     });
+// });
+
+
+const modal = document.getElementById('myModal');
+const modalImage = document.getElementById('modalImage');
+const myCert = document.querySelectorAll('.myCert');
+
+myCert.forEach((img) => {
+    img.addEventListener('click', () => {
+        const selectedImagePath = img.getAttribute('src');
+        modalImage.src = selectedImagePath;
+        modal.style.display = 'block';
     });
 });
+
+modal.querySelector('.close').addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+
 
 const leftBtns = document.querySelector("#left-btns");
 const rightBtns = document.querySelector("#right-btns");
