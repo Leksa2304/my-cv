@@ -263,16 +263,16 @@
             <div class="wrapper">
                 <h3 class="title">Свяжитесь со мной</h3>
 
-                <form id="form" class="form">
+                <form action="https://formspree.io/f/mdknndeo" id="form" class="form" method="post">
                     <div class="form__input-box">
-                        <input type="text" id="name" class="form__input-field" name="name" placeholder="Ваше имя" autocomplete="off">
+                        <input type="text" id="name" class="form__input-field" name="name" placeholder="Ваше имя" autocomplete="off" required>
                     </div>
                     <div class="form__input-box">
-                        <input type="email" id="email" class="form__input-field" name="email" placeholder="Ваш email" autocomplete="off">
+                        <input type="email" id="email" class="form__input-field" name="email" placeholder="Ваш email" autocomplete="off" required>
                     </div>
 
                     <div class="form__input-box">
-                        <textarea id="message" class="form__input-field" name="message" placeholder="Ваше сообщение"></textarea>
+                        <textarea id="message" class="form__input-field" name="message" placeholder="Ваше сообщение" required></textarea>
                     </div>
 
                     <button type="submit" class="form__button" id="sendButton">Отправить сообщение</button>
